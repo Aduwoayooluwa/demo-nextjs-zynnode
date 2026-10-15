@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useState, type FormEvent } from "react";
 
-const API_URL = (process.env.NEXT_PUBLIC_API_URL?.trim() || "http://localhost:8000").replace(/\/+$/, "");
+const API_URL = (process.env.NEXT_PUBLIC_API_URL?.trim() || "https://demo-fastapi-with-zynnode.zynnode.cc").replace(/\/+$/, "");
 type Task = { id: number; title: string; done: boolean };
 type Stats = { total: number; done: number; remaining: number };
 type Health = { environment: string };
